@@ -1,0 +1,14 @@
+List of bugs:
+1) Cannot close tab of a different page from current page. Must switch to the required page to close it. 
+   NOTES: Problem definitely occurs only upon calling the set_tab_exit_mode function. The kill_handler for every page seems to get corrupted for unknown reason.
+	EDIT: PROBLEM FIXED WOOOOOOOOOO
+	needed to link each tabClose with its respective page,and then closing would ensure only the required page closes.
+2) C Recognition: Does not recognize whole words.
+   NOTES: Tentative fix in form of lexer.
+3) String tag recognition: Higlights all double quotes on a string.
+   NOTES: No tentative fixed planned.	
+4) Opening a file sometimes throws a "Invalid UTF-8 string passed to pango_layout_set_text()" warning. For the most part, this is only an aesthitic error and does not affect functionality.
+   NOTES: No tentative fixed planned.
+	EDIT: Fixed by using g_locale_to_utf8(),however sometimes throws a null string,so if an error occurs sets global filename instead of segfault
+5) The selection cursor disappears for unknown reason.
+		 
