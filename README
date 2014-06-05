@@ -1,2 +1,6 @@
 Kawaii is a basic text editor written in C++ using the gtk3.0 library. 
 It is designed to be a clone of the popular gedit text editor.
+
+To execute:
+cd to directory
+run sh gtk+.sh in terminal, or sh gtk+_w.sh to suppress warnings.
